@@ -3,15 +3,15 @@ import java.util.Random;
 public class Decrypt {
 	
 	public static void main(String[] args) {
-		String cyphertext = "uhixanqcrpgimldeqrpkftzzr";
+		String ciphertext = "uhixanqcrpgimldeqrpkftzzr";
 		
 		int key = 123;
 		Random r = new Random(key);
 		
 		String plaintext = "";
 		
-		for(int i = 0; i < cyphertext.length(); i++) {
-			plaintext += decrypt(cyphertext.charAt(i), Math.abs(r.nextInt()) % 26);
+		for(int i = 0; i < ciphertext.length(); i++) {
+			plaintext += decrypt(ciphertext.charAt(i), Math.abs(r.nextInt()) % 26);
 			
 		}
 		
